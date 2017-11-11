@@ -2,14 +2,11 @@
 #include <QDebug>
 //#include "eventmanager.h"
 #include "masterGuiLogic.h"
-#include "logicposition.h"
 #include <functional>
 #include <memory>
 
 MasterAppLogic::MasterAppLogic()
 {
-
-    this->logicPosition = new LogicPosition();
 
 }
 

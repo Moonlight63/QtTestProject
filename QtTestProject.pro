@@ -1,4 +1,4 @@
-QT += quick scxml
+QT += quick scxml quickcontrols2
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -14,7 +14,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     masterGuiLogic.cpp \
-    logicposition.cpp \
     masterAppLogic.cpp \
     mastereventbroker.cpp
 
@@ -37,6 +36,5 @@ HEADERS += \
     signal.h \
     property.h \
     masterGuiLogic.h \
-    logicposition.h \
     masterAppLogic.h \
     mastereventbroker.h

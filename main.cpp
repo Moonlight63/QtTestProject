@@ -1,7 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QDebug>
+#include <QtQuickControls2>
+#include <QQuickStyle>
 #include "mastereventbroker.h"
 #include "masterGuiLogic.h"
 #include "masterAppLogic.h"
@@ -11,6 +12,8 @@ int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
+
+    QQuickStyle::setStyle("Material");
 
     qmlRegisterType<MasterGuiLogic>("Adapter", 1,0, "Adapter");
 
